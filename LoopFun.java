@@ -62,6 +62,10 @@ public class LoopFun
                    char s = wordCharArray[i];
                    
                    wordCharArray[i] = (char) (s+3);
+                   
+                   if (wordCharArray[i] > 122 ) {
+                       wordCharArray[i] -= 26;
+                    }
                    result = result.append(wordCharArray[i]);
                 
             }
