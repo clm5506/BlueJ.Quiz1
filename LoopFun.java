@@ -60,11 +60,12 @@ public class LoopFun
                for(int i = 0 ; i < wordCharArray.length; i++) {
                    
                    char s = wordCharArray[i];
-                  
+                   
                    wordCharArray[i] = (char) (s+3);
                    result = result.append(wordCharArray[i]);
-                }
                 
-                return result.toString();
+            }
+                
+               return result.toString();
     }
 }

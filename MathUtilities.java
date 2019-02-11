@@ -29,7 +29,8 @@ public class MathUtilities{
    * @return the half of the number in double
    */
   public Double half(Integer number) {
-      return null;
+      number = number/2;
+      return (double)number;
   }
 
   /**
@@ -38,7 +39,14 @@ public class MathUtilities{
    * @return true if the number is odd, false if it is even
    */
   public Boolean isOdd(Integer number){
-      return null;
+      boolean bool;
+      
+      if (number % 2 == 0) {
+          bool = false;
+        } else {
+            bool = true;
+        }
+      return bool;
   }
 
 
@@ -48,7 +56,11 @@ public class MathUtilities{
    * @return the result of the number multiply by itself
    */
   public Integer square(Integer number) {
-      return null;
+      double numConvertedTodub = (double)number;
+      double a = Math.pow(numConvertedTodub,2);
+      int b = (int)a;
+      Integer answerConvertedToInteger = new Integer(b);
+      return answerConvertedToInteger;
   }
 
 }
